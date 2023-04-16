@@ -1,0 +1,26 @@
+version: '2'
+services:
+
+
+  #MySQL Service
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: cms
+      MYSQL_ROOT_PASSWORD: s433FF_f4sdfeD3edd4fRfD
+      MYSQL_PASSWORD: s433FF_f4sdfeD3edd4fRfD
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+
+
+
+
+
+
+
+                        
